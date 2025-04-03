@@ -18,10 +18,15 @@ Industry Applications of Gray code:
 
 
 This Gray code can also be derived for K-map.
-|  0  |  1  |  3  |  2  | 
-|  4  |  5  |  7  |  6  | 
+
+|  0  |  1  |  3  |  2  |
+
+|  4  |  5  |  7  |  6  |
+
 |  C  |  D  |  F  |  E  | 
+
 |  8  |  9  |  B  |  A  | 
+
 This is the positional encoding of a K-map with respect to binary digits 
 Go from left to right on first line,
 and then from right to left on the second line, 
