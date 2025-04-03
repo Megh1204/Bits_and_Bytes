@@ -27,12 +27,18 @@ This Gray code can also be derived for K-map.
 
 |  8  |  9  |  B  |  A  | 
 
-This is the positional encoding of a K-map with respect to binary digits 
+This is the positional encoding of a K-map with respect to binary digits.
+
 Go from left to right on first line,
+
 and then from right to left on the second line, 
+
 and then from left to right on the third line, 
+
 and so on in a snake pattern.
 
-Following the snake pattern observed above: 
+Following the snake pattern observed above:
+
 gray   --> 0-1-3-2-6-7-5-4-c-d-f-e-a-b-9-8
+
 binary --> 0-1-2-3-4-5-6-7-8-9-a-b-c-d-e-f
