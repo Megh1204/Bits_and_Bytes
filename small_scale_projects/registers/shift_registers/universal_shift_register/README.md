@@ -1,11 +1,18 @@
- Universal Shift Register is a versatile digital circuit that can perform multiple data operations, including:
+ Universal Shift Register is a shift register that can mimic the behaviour all the available shift registers within the same module with just simple muxed logic. 
 
-1. Parallel Load
-2. Serial In / Serial Out
-3. Shift Left
-4. Shift Right
-5. Hold (no operation)
+ It can behave like a:
+ --> shift right SISO
+ --> shift left SISO
+ --> Holding the value
+ --> Parallel loading input. 
 
-It is known to be UNIVERSAL because it can handle all basic shift and storage operations, making it useful in many applications like data conversion, delay storage, or arithmetic operations.
+ All of this can be done just by adding an extra 4:1 MUX logic where the selector variables S1 and S0 decide the mode of operation. If the universal shift regsister is of length n, we need n such 4:1 MUXes for mode selection for each of the register's flipflop's.
+
+ S1  S0   Register working
+ 0    0   Holds previous value/No change.
+ 0    1   Shift Right Register.
+ 1    0   Shift Left Register.
+ 1    1   Parallel loading.
+
 
  
