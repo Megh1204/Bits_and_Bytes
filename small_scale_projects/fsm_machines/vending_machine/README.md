@@ -16,5 +16,4 @@ Assumptions and Corner cases: Considered N=1 and D=1 are asserted for one cycle 
 
 Our expectation is that at any given time the coin sensor should only detect a nickel or a dime, or it need not detect any coin in which case the state will remain same, but it should not detect both nickel and a dime at the same time instant. If in case that happens, I would consider that a invalid input or there is a glitch in the coin sensor which is causing such input pattern. But for some reason that happens, lets give priority to dime and advance 10 cents. 
 
-Also, the inputs could be synchronous to the clock or asynchronous to the clock. Because in typical vending machines, the coin sensor only considers if the dime or nickel or any typical coin being deposited but in most use cases there might/might not be a notion of the clock inside the vending machine. 
-
+Also, the inputs could be synchronous or asynchronous to the clock. And similarly the outputs also could be synchronous or asynchronous to the clock. 
