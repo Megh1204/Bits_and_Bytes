@@ -37,4 +37,4 @@ PULSE              1          PULSE         0
 ![Registered Mealy waveform](fsm/registered_mealy.png)
 
 
-I have implemented the same level to pulse converter using several mechanisms. However, the final conlusion comes down to the fact that using a single FF gives an instanataneous result, however is prone to glitches. Using two flip flops in the design will result in a delayed output but is free of glitches. 
+I have implemented the same level to pulse converter using several mechanisms. However, the final conlusion comes down to the fact that using a single FF gives an instanataneous result, however is prone to glitches and might be high for a very minute/short period of time if data is asserted very close to the next rising edge. Hence, using two flip flops in the design will result in a delayed output but is free of glitches. 
