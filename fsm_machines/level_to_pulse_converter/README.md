@@ -4,7 +4,7 @@ This can be implemented through several ways: Either by registering the inputs o
 
 1. level_to_pulse_converter_registered_once.v : Register input data and take datain && !datareg, i.e the pulse will be detected for a very short time when datain has become high and deasserts itself when datareg becomes high. However there is a major disadvantage with this ciruit, if the datain goes high very close to the next rising edge of the clock, then the pulse will be high for a very short amount of time and hence highly prone to glitches at high frequencies. 
 
-![Glitchy waveform](input_regsitering/registered_once.png)
+![Glitchy waveform](input_registering/registered_once.png)
 
 2. level_to_pulse_converter_registered_twice.v : The ideal output pulse should be high for one full clock cycle. So we could register the output through two stages. The output will be delayed however, the pulse would be high for one full clock cycle which free of glitches.
 
