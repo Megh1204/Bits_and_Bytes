@@ -1,10 +1,10 @@
 `timescale 1ns / 1ps
 
-module edge_detector(
+module negedge_detector(
     input clk, 
     input resetn,
     input data_in, 
-    output edge_detected
+    output negedge_detected
     );
     
     reg q1;
@@ -20,6 +20,6 @@ module edge_detector(
         end
     end
     
-    assign edge_detected = q1^q2;
+    assign negedge_detected = ~q1^q2;
     
 endmodule
