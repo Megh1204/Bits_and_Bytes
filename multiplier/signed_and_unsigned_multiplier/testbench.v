@@ -7,8 +7,9 @@ localparam input_width = 4;
 reg [input_width-1:0] a,b;
 wire [2*input_width-1:0] y;
 
+//Can either instantiate signed or unsigned multiplier. 
 unsigned_multiplier #(.input_width(input_width)) dut(.a(a),.b(b),.y(y));
-     
+
     initial begin
         a = 4'b0000; 
         b = 4'b0000;
