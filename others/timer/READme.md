@@ -1,0 +1,1 @@
+This module is a typical timer and once the constraints file is set and programmed on the Basys 3 FPGA board, we will the minutes and seconds on the FPGA board. If we have a 6-digit display, we would have been able to display HH:MM:SS. However since the Basys 3 FPGA board only supports only upto 4-digit SSD display. I only displayed the Minutes and seconds on the display.
